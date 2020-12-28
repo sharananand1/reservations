@@ -20,3 +20,9 @@ a.badge {
   transform: unset;
   box-shadow: unset;
 }
+.save-btn {
+  color: #ffffff;
+  background: navy;
+  border-radius: 25px;
+  padding: 5px 25px;
+}
