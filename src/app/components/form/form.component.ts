@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {LocalStorageService} from '../../../core/services/local-storage.service';
 import {SnotifyService} from 'ng-snotify';
 import * as moment from 'moment';
+import {Router} from '@angular/router';
 declare var $: any;
 
 @Component({
@@ -29,7 +30,9 @@ export class FormComponent implements OnInit {
     maxDiscount: ''
   };
   minDate;
-  constructor(private auth: LocalStorageService, private snotty: SnotifyService) {
+  constructor(private auth: LocalStorageService,
+              private snotty: SnotifyService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
@@ -87,6 +90,7 @@ export class FormComponent implements OnInit {
         this.auth.setValue('data', this.couponObj);
         this.auth.getValue('data', true);
         this.snotty.success('Congratulations, You have added discount successfully. (For more details or reference check console or local storage)');
+        this.router.navigate(['/congrats']);
         this.couponObj.coupon_code = '';
         this.couponObj.coupon_type = 'user';
         this.couponObj.valid_from = '';

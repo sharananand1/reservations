@@ -27,6 +27,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import {SnotifyModule, SnotifyPosition, SnotifyService} from 'ng-snotify';
+import { CongratsComponent } from './components/congrats/congrats.component';
 export const ToastConfig = {
   global: {
     newOnTop: true,
@@ -100,7 +101,8 @@ export const ToastConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    CongratsComponent
   ],
   imports: [
     BrowserModule,
