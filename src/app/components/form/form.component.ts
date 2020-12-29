@@ -88,7 +88,6 @@ export class FormComponent implements OnInit {
       if (this.couponObj.rules[0]) {
         console.log(this.couponObj);
         this.auth.setValue('data', this.couponObj);
-        this.auth.getValue('data', true);
         this.snotty.success('Congratulations, You have added discount successfully. (For more details or reference check console or local storage)');
         this.router.navigate(['/congrats']);
         this.couponObj.coupon_code = '';

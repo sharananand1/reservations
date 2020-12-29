@@ -34,8 +34,8 @@
               <mat-form-field appearance="standard" class="w-100">
                 <mat-label>Start Date</mat-label>
                 <!-- #docregion toggle -->
-                <input matInput [matDatepicker]="picker" [min]="minDate" readonly [(ngModel)]="couponObj.valid_from" name="validFrom"
-                       id="validFrom" required>
+                <input matInput [matDatepicker]="picker" [min]="minDate" readonly [(ngModel)]="couponObj.valid_from"
+                       name="validFrom" id="validFrom" required>
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
                 <!-- #enddocregion toggle -->
@@ -45,8 +45,8 @@
               <mat-form-field appearance="standard" class="w-100">
                 <mat-label>End Date</mat-label>
                 <!-- #docregion toggle -->
-                <input matInput [matDatepicker]="pickerEnd" [min]="minDate" readonly [(ngModel)]="couponObj.valid_to" name="validTo" id="validTo"
-                       required>
+                <input matInput [matDatepicker]="pickerEnd" [min]="minDate" readonly [(ngModel)]="couponObj.valid_to"
+                       name="validTo" id="validTo" required>
                 <mat-datepicker-toggle matSuffix [for]="pickerEnd"></mat-datepicker-toggle>
                 <mat-datepicker #pickerEnd></mat-datepicker>
                 <!-- #enddocregion toggle -->
