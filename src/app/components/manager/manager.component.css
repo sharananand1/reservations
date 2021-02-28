@@ -1,28 +1,20 @@
-.fixed-position {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-}
 .card-container {
   margin-top: 10rem;
   margin-bottom: 10rem;
   z-index: 0;
 }
+
 a.badge {
   cursor: pointer;
 }
-.card{
+
+.card {
+  border-radius: 18px;
   transform: translateY(-3px);
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
-.card-box{
+
+.card-box {
   transform: unset;
   box-shadow: unset;
-}
-.save-btn {
-  color: #ffffff;
-  background: navy;
-  border-radius: 25px;
-  padding: 5px 25px;
 }
